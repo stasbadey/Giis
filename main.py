@@ -617,7 +617,7 @@ def draw_line_based_on_algorithm(canvas):
         circle_algorithm(canvas)
     elif selected_algorithm == "ellipse":
         ellipse_algorithm(canvas)
-    elif selected_algorithm == "giperbola":
+    elif selected_algorithm == "hyperbola":
         hyperbola_draw()
     elif selected_algorithm == "parabola":
         parabola_draw()
@@ -656,11 +656,11 @@ def main():
     ellipse_button = tk.Button(root, text="Эллипс", command=lambda: select_algorithm("ellipse"))
     ellipse_button.pack(side=tk.LEFT)
 
-    debug_button = tk.Button(root, text="Гипербола", command=lambda: select_algorithm("giperbola"))
-    debug_button.pack(side=tk.LEFT)
+    hyperbola_button = tk.Button(root, text="Гипербола", command=lambda: select_algorithm("hyperbola"))
+    hyperbola_button.pack(side=tk.LEFT)
 
-    debug_button = tk.Button(root, text="Парабола", command=lambda: select_algorithm("parabola"))
-    debug_button.pack(side=tk.LEFT)
+    parabola_button = tk.Button(root, text="Парабола", command=lambda: select_algorithm("parabola"))
+    parabola_button.pack(side=tk.LEFT)
 
     hermite_button = tk.Button(root, text="Эрмита", command=lambda: select_algorithm("hermite"))
     hermite_button.pack(side=tk.LEFT)
